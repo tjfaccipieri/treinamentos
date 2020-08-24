@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Treinamento Javascript</title>
+</head>
+
+<body>
+    <script>
+        //script de condicionais if e switch
+        function retornaSexo(sexo) {
+            // M ou F
+            //Masculino ou Feminino
+            /* 1 = "adiciona o valor na variavel"
+            2 == "verifica o valor da variavel"
+            3 === "verifica o valor e o tipo da variavel"*/
+            if (sexo === 'M') {
+                return 'Masculino';
+            } else if (sexo === 'F') {
+                return 'Feminino';
+            } else {
+                return 'Outro';
+            }
+        }
+
+        var resultado = retornaSexo('M');
+        console.log(resultado);
+
+
+        //switch case
+        function retornaSexo2(sexo2) {
+            switch (sexo2) {
+                case 'M':
+                    return 'Masculino';
+                case 'F':
+                    return 'Feminino';
+                default:
+                    return 'Outro';
+            }
+        }
+        var resultado2 = retornaSexo2('F');
+        console.log(resultado2);
+    </script>
+</body>
+
+</html>

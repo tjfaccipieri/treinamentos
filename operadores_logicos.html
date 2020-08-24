@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Treinamento Javascript</title>
+</head>
+
+<body>
+    <script>
+        //scripts de operadores lógicos AND/OR/NOT
+        // && -> AND
+        // || -> OR
+        // != ou !== -> NOT
+        var sexo = 'F',
+            idade = 19;
+
+        if (sexo === 'M' && idade >= 18) {
+            var resultado = 'OK';
+        } else {
+            resultado = 'Não ok';
+        }
+        if (sexo === 'M' || idade >= 18) {
+            var resultado2 = 'apenas uma condição OK';
+        }
+        if (sexo !== 'F') {
+            resultado3 = 'Não é mulher';
+        } else {
+            resultado3 = 'É mulher!'
+        }
+        console.log(resultado);
+        console.log(resultado2);
+        console.log(resultado3);
+    </script>
+</body>
+
+</html>
