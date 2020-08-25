@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Treinamento Javascript</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" name="nome" />
+        <button class="botao">Adicionar</button>
+        <p></p>
+    </div>
+
+    <script>
+        var linkElement = document.createElement('a');
+        //criar um link depois de apertar o botão
+        linkElement.setAttribute('href', 'http://google.com');
+        var textElement = document.createTextNode('abrir o google');
+
+        linkElement.appendChild(textElement);
+
+        var containerElement = document.querySelector('#app');
+        containerElement.appendChild(linkElement);
+    </script>
+</body>
+
+</html>

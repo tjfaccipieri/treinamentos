@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Treinamento Javascript</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" name="nome" id="nome" />
+
+        <button class="botao">Adicionar</button>
+    </div>
+
+
+    <script>
+        //scripts que referenciam a DOM direto no script
+        //var inputElement = document.getElementById('nome');
+        //var inputElement = document.querySelector('input[name=nome]');
+        var inputElement = document.querySelector('input[name=nome]');
+        var btnElement = document.querySelector('button.botao')
+
+        btnElement.onclick = function() {
+            var text = inputElement.value;
+            alert(text);
+        }
+
+        console.log(inputElement);
+    </script>
+</body>
+
+</html>
