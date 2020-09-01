@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Treinamento Javascript</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="box">
+            Estilo da box criado por injeção de Javascript
+        </div>
+    </div>
+    <script>
+        var boxElement = document.querySelector('.box');
+
+        boxElement.style.width = '100px';
+        boxElement.style.height = '100px';
+        boxElement.style.backgroundColor = '#ff9'
+    </script>
+</body>
+
+</html>

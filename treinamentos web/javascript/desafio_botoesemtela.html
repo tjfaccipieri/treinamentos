@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Treinamento Javascript</title>
+</head>
+
+<body>
+    <button class="botao">Criar</button>
+    <div id="app">
+
+    </div>
+    <script>
+        var btn = document.querySelector('button.botao');
+        var div = document.querySelector('div');
+
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var cor = "#";
+            for (var i = 0; i < 6; i++) {
+                cor += letters[Math.floor(Math.random() * 16)];
+            }
+            console.log(cor);
+            return cor;
+        }
+
+        btn.onclick = function() {
+
+            var createBox = document.createElement('div');
+            createBox.style.width = "100px";
+            createBox.style.height = "100px";
+            createBox.style.backgroundColor = newColor;
+            document.body.appendChild(createBox);
+        }
+
+        function getRandomColor() {
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        var newColor = getRandomColor(); // #E943F0
+
+
+        div.onmouseout = function() {
+            div.style.backgroundColor = newColor;
+        }
+    </script>
+</body>
+
+</html>
