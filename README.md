@@ -1,0 +1,1 @@
+### Repositório utilizado para armazenar treinamentos WEB variados, incluindo, mas não se limitando à: HTML/CSS/JS. 
