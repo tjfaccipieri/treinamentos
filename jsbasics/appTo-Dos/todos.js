@@ -7,22 +7,25 @@ function renderTodos(){
 listElement.innerHTML = '';
   for (todo of todos) {
     const todoElement = document.createElement('li');
+    const markElement = document.createElement('input');
     const todoText = document.createTextNode(todo);
     const linkElement = document.createElement('a');
-    // const linkText = document.createTextNode(' Excluir');
     const linkImage = document.createElement('img');
-    linkImage.src = "./images/deleteButton.svg";
-    linkImage.style.width = "18px";
-    linkImage.style.height = "18px";
-    // linkImage.style.position = "relative";
     const pos = todos.indexOf(todo);
+    
+    linkImage.src = "./images/deleteButton.svg";
+    linkImage.alt = "Excluir To-do";
+    markElement.type = "checkbox";
+    markElement.className = "check";
     
     linkElement.setAttribute('href', '#');
     linkElement.setAttribute('onclick', 'deleteTodo(' + pos + ')');
-    linkElement.appendChild(linkImage);
+    todoElement.appendChild(markElement);
     todoElement.appendChild(todoText);
+    linkElement.appendChild(linkImage);
     todoElement.appendChild(linkElement);
     listElement.appendChild(todoElement);
+    
   }
 }
 

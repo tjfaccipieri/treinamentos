@@ -1,0 +1,33 @@
+ul{
+  padding: 0;
+  display: table;
+  /* flex-direction: column; */
+}
+li{
+  /* position: relative; */
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+}
+img{
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+img:hover{
+  transform: scale(1.2);
+}
+button{
+  /* position: relative; */
+  width: 30px;
+  height: 30px;
+  border: none;
+}
+button:hover{
+  transform: rotate(180deg);
+}
+input.check{
+  /* position: absolute; */
+  margin-bottom: 5px;
+  padding: 5px;
+}
