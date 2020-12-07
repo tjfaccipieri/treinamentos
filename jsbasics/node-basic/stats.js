@@ -17,8 +17,8 @@ setInterval(()=>{
   console.clear();
   console.log("=========PC STATS=========");
   console.table(stats);
-  log(`${JSON.stringify(stats)}\n`)
-
+  if (percents < 45){
+    log(`${JSON.stringify(stats)}\n`)
+  }
 },1000)
 
-//alterar para gravar no log apenas quando o available ficar abaixo de 40%
